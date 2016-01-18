@@ -10,3 +10,7 @@ https://hub.docker.com/r/kerngven/dockerone-crawler-client/
 
 ```
 
+# run
+```
+	node index.js
+```
