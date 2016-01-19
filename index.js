@@ -1,8 +1,6 @@
 
 //host, userID, machineID, profileID
-// process.env['hostname']= '127.0.0.1:3000';
-// process.env['auth_id']= "xe2rRYbxsa--XRjlyZVOxIkuqX4YBA8KxkM4z6aMEfg";
-var server = require('./lib/server').createServer(process.env['auth_id'], process.env['hostname']);
+var server = require('./lib/server').createServer(process.env['auth_id'] || 'xe2rRYbxsa--XRjlyZVOxIkuqX4YBA8KxkM4z6aMEfg', process.env['hostname'] || '127.0.0.1:3000');
 
 process.on('exit', function() {
     console.log('docker exit');
